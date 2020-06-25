@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+class Task extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            title: "Task Title",
+            type: "Task",
+            assignee: "John Doe"
+        };
+    }
+    
+    render() {
+        return (
+            <div class="task-card">
+                <div class="task-title">{this.title}</div>
+                <div class="task-type">{this.type}</div>
+                <div class="task-assignee">{this.assignee}</div>
+            </div>
+        );
+    }
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// ========================================
+
+ReactDOM.render(<Task />, document.getElementById("root"));
