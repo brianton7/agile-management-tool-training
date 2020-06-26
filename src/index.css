@@ -1,3 +1,7 @@
+ /* 
+ Task Card classes
+ */
+
 .task-card {
   border-color: black;
   border-style: solid;
@@ -17,6 +21,7 @@
 
 .task-type {
   font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   grid-area: 2 / 1 / 3 / 2;
   padding-left: 24px;
   text-align: start;
@@ -24,7 +29,12 @@
 
 .task-assignee {
   font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   grid-area: 2 / 2 / 3 / 3;
   padding-right: 24px;
   text-align: end;
 }
+
+/*
+Task Board Classes
+*/
