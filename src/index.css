@@ -1,22 +1,22 @@
 .task-card {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 90% 10%; 
-    border-style: solid;
-    border-color: black;
+  border-color: black;
+  border-style: solid;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 90% 10%;
 }
 
 .task-title {
-    grid-area: 1 / 1 / 2 / 3;
-    text-align: center;
+  grid-area: 1 / 1 / 2 / 3;
+  text-align: center;
 }
 
 .task-type {
-    grid-area: 2 / 1 / 3 / 2;
-    text-align: start;
+  grid-area: 2 / 1 / 3 / 2;
+  text-align: start;
 }
 
 .task-assignee {
-    grid-area: 2 / 2 / 3 / 3;
-    text-align: end;
+  grid-area: 2 / 2 / 3 / 3;
+  text-align: end;
 }
