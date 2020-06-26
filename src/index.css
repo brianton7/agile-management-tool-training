@@ -6,27 +6,21 @@
   grid-template-rows: 80% 20%;
   height: 300px;
   width: 300px;
-
-  background-color: blue;
 }
 
 .task-title {
   grid-area: 1 / 1 / 2 / 3;
   text-align: center;
-  
-  background-color: lightblue;
 }
 
 .task-type {
   grid-area: 2 / 1 / 3 / 2;
+  padding: 10px;
   text-align: start;
-
-  background-color: red;
 }
 
 .task-assignee {
   grid-area: 2 / 2 / 3 / 3;
+  padding: 10px;
   text-align: end;
-
-  background-color: green;
 }
