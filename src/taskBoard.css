@@ -3,9 +3,19 @@ Task Board Classes
 */
 
 .task-column {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
 .board-title {
   text-align: center;
+}
+
+.board-title > h1 {
+  text-align: center;
+}
+
+.board {
+  display: flex;
 }
