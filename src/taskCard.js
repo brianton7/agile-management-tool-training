@@ -73,3 +73,5 @@ class TaskCard extends React.Component {
     );
   }
 }
+
+export default TaskCard;
